@@ -24,6 +24,4 @@ public class WeatherForecast {
     public ArrayList<WeatherDetail> getForecastDetails() {
         return forecastDetails;
     }
-
-    // You can add more methods here if needed
 }
