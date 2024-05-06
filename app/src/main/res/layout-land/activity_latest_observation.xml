@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F4FE">
+
+    <!-- Search Icon -->
+    <ImageView
+        android:id="@+id/searchIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/search"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Search Icon" />
+
+    <!-- ListView for weather observations -->
+    <ListView
+        android:id="@+id/weatherListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/searchIcon"
+        android:layout_above="@id/bottom_navigation_layout"
+        android:padding="16dp" />
+
+    <!-- Include your bottom navigation layout -->
+    <include
+        layout="@layout/bottom_navigation_layout"
+        android:id="@+id/bottom_navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

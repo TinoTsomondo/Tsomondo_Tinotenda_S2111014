@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mauchatritius"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        android:paddingBottom="100dp"
+        android:paddingTop="30dp"/>
+
+    <!-- Temperature Container -->
+
+    <!-- Wind Container -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/rounded_corners">
+
+        <!-- Temperature Label -->
+        <TextView
+            android:id="@+id/temperatureLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Temperature TextView -->
+        <TextView
+            android:id="@+id/temperatureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/temperatureLabel"
+            android:paddingTop="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <!-- Temperature Icon -->
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="33dp"
+            android:src="@drawable/icon_temperature" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginBottom="25dp">
+
+        <!-- Wind Label -->
+        <TextView
+            android:id="@+id/windLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingRight="40dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"/>
+
+        <!-- Wind TextView -->
+        <TextView
+            android:id="@+id/windTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:paddingTop="30dp"
+            android:layout_toRightOf="@id/windLabel"
+            android:layout_marginLeft="8dp"/>
+
+        <!-- Wind Icon -->
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="129dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="33dp"
+            android:src="@drawable/icon_wind" />
+    </RelativeLayout>
+
+    <!-- Humidity Container -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginBottom="25dp">
+
+        <!-- Humidity Label -->
+        <TextView
+            android:id="@+id/humidityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="30dp"
+            />
+
+        <!-- Humidity TextView -->
+        <TextView
+            android:id="@+id/humidityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:paddingTop="30dp"/>
+
+        <!-- Humidity Icon -->
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="38dp"
+            android:src="@drawable/icon_humidity" />
+    </RelativeLayout>
+
+    <!-- Pressure Container -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginBottom="25dp">
+
+        <!-- Pressure Label -->
+        <TextView
+            android:id="@+id/pressureLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="30dp"/>
+
+        <!-- Pressure TextView -->
+        <TextView
+            android:id="@+id/pressureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:paddingTop="30dp"/>
+
+        <!-- Pressure Icon -->
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp"
+            android:src="@drawable/icon_pressure" />
+    </RelativeLayout>
+
+    <!-- Visibility Container -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginBottom="25dp">
+
+        <!-- Visibility Label -->
+        <TextView
+            android:id="@+id/visibilityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="30dp"/>
+
+        <!-- Visibility TextView -->
+        <TextView
+            android:id="@+id/visibilityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:paddingTop="30dp"/>
+
+        <!-- Visibility Icon -->
+        <ImageView
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp"
+            android:src="@drawable/icon_visibility" />
+    </RelativeLayout>
+
+    <!-- PubDate TextView -->
+    <TextView
+        android:id="@+id/pubDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+</LinearLayout>

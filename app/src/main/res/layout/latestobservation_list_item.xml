@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mauritius"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        android:paddingBottom="100dp"
+        android:paddingTop="30dp"/>
+
+    <!-- Temperature Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_cornerstwo"
+        android:orientation="horizontal"
+        android:paddingBottom="100dp"
+        android:layout_marginBottom="25dp">
+
+        <!-- Temperature Label -->
+        <TextView
+            android:id="@+id/temperatureLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingRight="30dp"
+            android:paddingTop="30dp"/>
+
+        <!-- Temperature TextView -->
+        <TextView
+            android:id="@+id/temperatureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:paddingTop="30dp"/>
+    </LinearLayout>
+
+    <!-- Wind Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="100dp"
+        android:background="@drawable/rounded_cornerstwo"
+        android:layout_marginBottom="25dp">
+
+        <!-- Wind Label -->
+        <TextView
+            android:id="@+id/windLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingRight="30dp"
+            android:paddingTop="30dp"/>
+
+        <!-- Wind TextView -->
+        <TextView
+            android:id="@+id/windTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:paddingTop="30dp"/>
+    </LinearLayout>
+
+    <!-- Humidity Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_cornerstwo"
+        android:paddingBottom="100dp"
+        android:layout_marginBottom="25dp">
+
+        <!-- Humidity Label -->
+        <TextView
+            android:id="@+id/humidityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingRight="30dp"
+            android:paddingTop="30dp"/>
+
+        <!-- Humidity TextView -->
+        <TextView
+            android:id="@+id/humidityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:paddingTop="30dp"/>
+    </LinearLayout>
+
+    <!-- Pressure Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="100dp"
+        android:background="@drawable/rounded_cornerstwo"
+        android:layout_marginBottom="25dp">
+
+        <!-- Pressure Label -->
+        <TextView
+            android:id="@+id/pressureLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingRight="30dp"
+            android:paddingTop="30dp"/>
+
+        <!-- Pressure TextView -->
+        <TextView
+            android:id="@+id/pressureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:paddingTop="30dp"/>
+    </LinearLayout>
+
+    <!-- Visibility Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="100dp"
+        android:background="@drawable/rounded_cornerstwo"
+        android:layout_marginBottom="25dp">
+
+        <!-- Visibility Label -->
+        <TextView
+            android:id="@+id/visibilityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingRight="30dp"
+            android:paddingTop="30dp"/>
+
+        <!-- Visibility TextView -->
+        <TextView
+            android:id="@+id/visibilityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:paddingTop="30dp"/>
+    </LinearLayout>
+
+    <!-- PubDate TextView -->
+    <TextView
+        android:id="@+id/pubDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+</LinearLayout>
